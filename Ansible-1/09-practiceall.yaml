@@ -1,0 +1,20 @@
+- name: Installing nginx
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Ansible to install boto3 and botcore
+    ansible.builtin.pip:
+     name:
+     - boto3
+     - botocore
+     executable: pip-3.9
+
+  - name: Installing nginx
+    amazon.aws.ec2_instance:
+      name: "new"
+      security_group: "sg-00a68c2cca8087c79"
+      vpc_subnet_id: "subnet-0cc0054f859105b1f"
+      image_id: "ami-09c813fb71547fc4f"
+      instance_type: "t3.micro"
+      region: "us-east-1"
