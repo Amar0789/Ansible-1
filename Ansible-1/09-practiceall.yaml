@@ -2,8 +2,6 @@
   hosts: web
   become: yes 
   gather_facts: no
-  vars:
-   number:
   tasks:
   - name: To install nginx
     ansible.builtin.debug:
