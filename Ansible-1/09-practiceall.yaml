@@ -3,3 +3,9 @@
   tasks:
   - name: To test ping module
     ansible.builtin.ping:
+
+- name: TO test ping module
+  hosts: web
+  tasks:
+  - name: To test ping module
+    ansible.builtin.ping:
