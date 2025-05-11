@@ -9,10 +9,6 @@
      - botocore
      executable: pip3.9
 
-- name: TO create ec2
-  hosts: local
-  connection: local
-  tasks:
   - name: To install boto3 and botocore
     amazon.aws.ec2_instance:
      name: new
