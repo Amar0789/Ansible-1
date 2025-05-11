@@ -1,8 +1,8 @@
 - name: TO install nginx
   hosts: web
   become: yes
-  vars:
-   course: devops
+  vars_files:
+  - vars.yaml
   tasks:
   - name: To install nginx
     ansible.builtin.debug:
