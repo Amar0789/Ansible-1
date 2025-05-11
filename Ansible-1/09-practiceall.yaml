@@ -1,6 +1,7 @@
 - name: TO install nginx
   hosts: web
   become: yes 
+  gather_facts: no
   vars:
    number: 11
   tasks:
