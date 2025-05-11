@@ -1,11 +1,16 @@
-- name: TO test ping module
+- name: TO install nginx
   hosts: web
   tasks:
-  - name: To test ping module
-    ansible.builtin.ping:
+  - name: To install nginx
+    ansible.builtin.package:
+     name: nginx
+     state: present
 
-- name: TO test ping module
+- name: TO install nginx
   hosts: web
   tasks:
-  - name: To test ping module
-    ansible.builtin.ping:
+  - name: To install nginx
+    ansible.builtin.service:
+     name: nginx
+     state: started
+     enabled: yes
