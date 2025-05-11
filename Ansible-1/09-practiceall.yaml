@@ -4,5 +4,4 @@
   gather_facts: no
   tasks:
   - name: To install nginx
-    ansible.builtin.debug:
-     msg: "{{number | default('Somethinnnn')}}"
+    ansible.builtin.command: ls -ltr > file.txt
