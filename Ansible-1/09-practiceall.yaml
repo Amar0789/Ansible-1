@@ -2,17 +2,9 @@
   hosts: web
   become: yes 
   vars:
-   course: devops
-   duration: 120
-   topics:
-   - linux
-   - shell
-   - Ansible
-   - Terraform
-   terraform:
-   - topic: 1
-   - topic: 2
+   number: 11
   tasks:
   - name: To install nginx
     ansible.builtin.debug:
-     msg: " {{course}} {{duration}} {{topics}} {{terraform}} "
+     msg: " Print this "
+    when: {{ number | int > 10}}
