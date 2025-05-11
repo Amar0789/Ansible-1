@@ -6,5 +6,4 @@
   tasks:
   - name: To install nginx
     ansible.builtin.debug:
-     msg: " Print this "
-    when: number | int > 10
+     msg: "{{ansible_facts}}"
