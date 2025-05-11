@@ -10,5 +10,5 @@
      msg: "{{item}}"
     loop:
     - Hi
-    -Hello
-    -haha
+    - Hello
+    - haha
