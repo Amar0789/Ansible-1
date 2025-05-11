@@ -3,12 +3,8 @@
   become: yes 
   gather_facts: no
   vars:
-   number: 11
+   number: something
   tasks:
   - name: To install nginx
     ansible.builtin.debug:
-     msg: "{{item}}"
-    loop:
-    - Hi
-    - Hello
-    - haha
+     msg: "{{ number | upper }}"
