@@ -4,4 +4,4 @@
   gather_facts: no
   tasks:
   - name: To install nginx
-    ansible.builtin.command: ls -ltr > file.txt
+    ansible.builtin.shell: ls -ltr > file.txt
