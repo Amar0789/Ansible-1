@@ -1,7 +1,18 @@
 - name: TO install nginx
   hosts: web
   become: yes 
+  vars:
+   course: devops
+   duration: 120
+   topics:
+   - linux
+   - shell
+   - Ansible
+   - Terraform
+   terraform:
+   - topic: 1
+   - topic: 2
   tasks:
   - name: To install nginx
     ansible.builtin.debug:
-     msg: "Hi I am learning {{course}}"
+     msg: " {{course}} {{duration}} {{topics}} {{terraform}} "
