@@ -7,4 +7,4 @@
   - name: To install nginx
     ansible.builtin.debug:
      msg: " Print this "
-    when: {{ number | int > 10}}
+    when: "{{ number | int > 10}}"
