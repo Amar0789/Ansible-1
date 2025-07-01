@@ -1,13 +1,14 @@
-- name: To install packages
+- name: To install package
   become: yes
   hosts: web
-  tasks:
+  tasks: 
   - name: To install nginx
-    ansible.builtin.package:
+    ansible.builtin.packahe:
       name: nginx
       state: present
-  - name: To start nginx
+  - name: To enable nginx
     ansible.builtin.service:
       name: nginx
       state: started
       enabled: true
+      
