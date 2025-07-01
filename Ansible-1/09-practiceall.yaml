@@ -1,19 +1,13 @@
-- name: TO install boto3 and botocore
-  hosts: local
-  connection: local
+- name: To install packages
+  become: yes
+  hosts: web
   tasks:
-  - name: To install boto3 and botocore
-    ansible.builtin.pip:
-     name:
-     - boto3
-     - botocore
-     executable: pip3.9
-
-  - name: To install boto3 and botocore
-    amazon.aws.ec2_instance:
-     name: new
-     vpc_subnet_id: "subnet-0cc0054f859105b1f "
-     image_id: "ami-09c813fb71547fc4f"
-     instance_type: "t3.micro"
-     security_group: "sg-05f6156281b35f70e"
-     region: "us-east-1"
+  - name: To install nginx
+    ansible.builtin.package:
+    name: nginx
+    state: present
+  - name: To start nginx
+    ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: true
