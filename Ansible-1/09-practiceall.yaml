@@ -3,4 +3,4 @@
   hosts: web
   tasks: 
   - name: TO work with loops
-    ansible.builtin.command: ls -ltr > txt.txt
+    ansible.builtin.shell: ls -ltr > txt.txt
