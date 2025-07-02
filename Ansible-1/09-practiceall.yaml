@@ -9,4 +9,4 @@
   
   - name: TO add expense user if doesn't exist
     ansible.builtin.command: useradd expense
-    when: user.rc! = 0
+    when: user.rc!=0
