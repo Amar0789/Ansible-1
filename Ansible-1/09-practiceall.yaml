@@ -16,4 +16,4 @@
       state: started
       enabled: true
   - name: ansible.builtin.debug:
-    msg: "{{colleges}} {{branch}}"
+      msg: "{{colleges}} {{branch}}"
