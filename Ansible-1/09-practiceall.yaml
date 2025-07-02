@@ -3,6 +3,8 @@
   hosts: web
   vars:
    names: nginx
+   colleges: CBIT
+   branch: something
   tasks: 
   - name: To install nginx
     ansible.builtin.package:
@@ -13,3 +15,5 @@
       name: nginx
       state: started
       enabled: true
+  - name: ansible.builtin.debug:
+    msg: "{{colleges}} {{branch}}"
