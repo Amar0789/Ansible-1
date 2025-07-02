@@ -1,12 +1,14 @@
-- name: play1
+- name: To install and enable nginx
   hosts: web
-  tasks:
-  - name: To perform play1
-    ansible.builtin.debug:
-     msg: "Hi, this is from play1"
-- name: play2
-  hosts: web
-  tasks:
-  - name: To perform play2
-    ansible.builtin.debug:
-     msg: "Hi, this is from play2"
+  become: true
+  tasks: 
+  - name: To install nginx package
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - name: To enable nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: true
+      
