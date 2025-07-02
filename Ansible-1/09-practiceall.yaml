@@ -18,4 +18,4 @@
   - name: To display college name
     ansible.builtin.debug:
       msg: "{{colleges}} {{branch}}"
-    when: "{{colleges}} == CBIT"
+    when: colleges == CBIT
