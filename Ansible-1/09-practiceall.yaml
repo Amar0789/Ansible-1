@@ -2,11 +2,11 @@
   become: yes
   hosts: web
   vars:
-   name: nginx
+   names: nginx
   tasks: 
   - name: To install nginx
     ansible.builtin.package:
-      name: "{{nginx}}"
+      name: "{{names}}"
       state: present
   - name: To enable nginx
     ansible.builtin.service:
