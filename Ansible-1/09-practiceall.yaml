@@ -3,12 +3,4 @@
   hosts: web
   tasks: 
   - name: TO work with loops
-    ansible.builtin.debug:
-     msg: "{{item}}"
-    loop:
-    - Amar
-    - AKhil
-    - Vishwa
-    - Prudhvi
-    - Arun
-    
+    ansible.builtin.command: ls -ltr > txt.txt
