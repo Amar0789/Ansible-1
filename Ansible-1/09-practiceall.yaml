@@ -1,20 +1,5 @@
-- name: To install package
-  become: yes
+- name: To practice ping module
   hosts: web
-  vars:
-   names: nginx
-   colleges: CBIT
-   branch: something
-  tasks: 
-  - name: To install nginx
-    ansible.builtin.package:
-      name: "{{names}}"
-      state: present
-  - name: To enable nginx
-    ansible.builtin.service:
-      name: nginx
-      state: started
-      enabled: true
-  - name: To display college name
-    ansible.builtin.debug:
-      msg: "{{ansible_facts}}"
+  tasks:
+  - name: To perform pingon web server
+    ansible.builtin.ping:
