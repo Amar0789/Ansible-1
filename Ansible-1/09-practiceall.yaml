@@ -17,5 +17,4 @@
       enabled: true
   - name: To display college name
     ansible.builtin.debug:
-      msg: "{{colleges}} {{branch}}"
-    when: colleges == "CBIT"
+      msg: "{{ansible_facts}}"
