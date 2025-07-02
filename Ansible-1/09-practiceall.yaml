@@ -1,12 +1,14 @@
-- name: To create expense user
-  hosts: web
+- name: To work with loops
   become: yes
-  tasks:
-  - name: TO check for expense user
-    ansible.builtin.command: id expense
-    register: user
-    ignore_errors: true
-  
-  - name: TO add expense user if doesn't exist
-    ansible.builtin.command: useradd expense
-    when: user.rc!=0
+  hosts: web
+  tasks: 
+  - name: TO work with loops
+    ansible.builtin.debug:
+     msg: "{{item}}"
+    loop:
+    - Amar
+    - AKhil
+    - Vishwa
+    - Prudhvi
+    - Arun
+    
