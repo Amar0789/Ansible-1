@@ -15,5 +15,6 @@
       name: nginx
       state: started
       enabled: true
-  - name: ansible.builtin.debug:
+  - name: To display college name
+    ansible.builtin.debug:
       msg: "{{colleges}} {{branch}}"
