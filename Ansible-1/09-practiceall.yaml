@@ -1,6 +1,5 @@
-- name: To work with loops
-  become: yes
-  hosts: web
+- name: To start using playbook
+  hosts: devops
   tasks: 
-  - name: TO work with loops
-    ansible.builtin.shell: ls -ltr > txt.txt
+  - name: To ping the server
+    ansible.builtin.ping:
