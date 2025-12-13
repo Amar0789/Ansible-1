@@ -1,5 +1,6 @@
 - name: To start using playbook
   hosts: devops
   tasks: 
-  - name: To ping the server
-    ansible.builtin.ping:
+  - name: To message
+    ansible.builtin.debug:
+     msg: "I will be complting devops very soon"
