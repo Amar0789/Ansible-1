@@ -1,6 +1,6 @@
-- name: To start using playbook
+- name: To get handson with ansible
   hosts: devops
-  tasks: 
-  - name: To message
+  tasks:
+  - name: To display a message
     ansible.builtin.debug:
-     msg: "I will be complting devops very soon"
+     msg: "I will be completing ansible by tomorrow EOD"
