@@ -1,7 +1,10 @@
 - name: To practice ansible today.
-  hosts: devops
+  hosts: local
+  connection: localhost
   become: yes
   tasks:
   - name: To work with variables
+    vars:
+     names: Amar Sai
     ansible.builtin.debug:
      msg: "Hi {{names}}, you will be back on track very soon"
