@@ -5,3 +5,4 @@
   - name: To check for yser Amar
     ansible.builtin.command: id expense
     register: user_info
+    ignore_errors: true
