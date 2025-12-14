@@ -1,6 +1,5 @@
-- name: To get handson with ansible
-  hosts: devops
-  tasks:
-  - name: To display a message
-    ansible.builtin.debug:
-     msg: "I will be completing ansible by tomorrow EOD"
+- name: To practice nginx
+  hosts: hosts
+  tasks: 
+  - name: To ping a module
+    ansible..builtin.ping:
