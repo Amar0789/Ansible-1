@@ -1,9 +1,9 @@
-- name: To practice ansbile
+- name: To practice ansible today.
   hosts: devops
-  vars:
-   name: "Amar"
   become: yes
-  tasks: 
-  - name: To install nginx
+  vars:
+   name: Amar
+  tasks:
+  - name: To work with variables
     ansible.builtin.debug:
-      msg: "Hi {{name}}"
+     msg: "Hi {{name}}, you will be back on track very soon"
