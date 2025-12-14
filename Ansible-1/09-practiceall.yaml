@@ -1,5 +1,5 @@
 - name: To add a user Amar if not already existing
-  hosts: devops
+  hosts: node
   become: yes
   tasks:
   - name: To check for yser Amar
