@@ -5,5 +5,5 @@
   - name: To check for default values
     vars:
      names:
-    ansible.bultin.debug:
+    ansible.builtin.debug:
      msg: "hello {{names}}" 
