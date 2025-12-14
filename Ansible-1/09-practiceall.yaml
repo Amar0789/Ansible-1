@@ -3,5 +3,5 @@
   tasks: 
   - name: To ping a modules
     ansible.builtin.package:
-    name: "nginx"
-    state: "installed"
+     name: "nginx"
+     state: "installed"
