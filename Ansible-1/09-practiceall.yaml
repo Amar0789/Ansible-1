@@ -1,12 +1,9 @@
-- name: To print loops
+- name: ansible tasks
   become: yes
   hosts: devops
-  tasks:
-  - name: To print loops
-    ansible.builtin.debug:
-     msg: "{{item}}"
-    loop:
-    - One
-    - Two 
-    - Three
-    - Four
+  tasks: 
+  - name: To check for default values
+    vars:
+     names:
+    ansible.bultin.debug:
+     msg: "hello {{names}}" 
