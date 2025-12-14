@@ -1,11 +1,7 @@
 - name: To practice ansible today.
   hosts: devops
   become: yes
-  vars:
-   names: Yellanki Amar SAI
   tasks:
   - name: To work with variables
-    vars:
-     names: Amar Sai
     ansible.builtin.debug:
      msg: "Hi {{names}}, you will be back on track very soon"
