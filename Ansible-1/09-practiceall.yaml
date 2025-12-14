@@ -1,6 +1,6 @@
 - name: To practice ansbile
   become: yes
-  hosts: devopss
+  hosts: devops
   tasks: 
   - name: To install nginx
     ansible.builtin.package:
