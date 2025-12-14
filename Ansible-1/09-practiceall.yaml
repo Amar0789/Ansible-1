@@ -1,9 +1,10 @@
 - name: To practice ansible today.
   hosts: devops
   become: yes
-  vars_files:
-  - vars.yaml
+  vars_prompt:
+  - name: User
+    prompt: "Hi please enter your name"
   tasks:
   - name: To work with variables
     ansible.builtin.debug:
-     msg: "Hi {{names}}, you will be back on track very soon"
+     msg: "Hi {{user}}, you will be back on track very soon"
