@@ -1,5 +1,5 @@
 - name: To practice nginx
- become: yes
+  become: yes
   hosts: devops
   tasks: 
   - name: To ping a modules
