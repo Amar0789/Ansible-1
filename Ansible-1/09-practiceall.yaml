@@ -1,8 +1,8 @@
 - name: To practice ansbile
   become: yes
-  hosts: devops
   vars:
-    name: "Amar"
+  name: "Amar"
+  hosts: devops
   tasks: 
   - name: To install nginx
     ansible.builtin.debug:
