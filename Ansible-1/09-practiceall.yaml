@@ -1,5 +1,5 @@
 - name: To practice nginx
   hosts: hosts
   tasks: 
-  - name: To ping a module
+  - name: To ping a modules
     ansible..builtin.ping:
