@@ -1,10 +1,7 @@
-- name: To practice ansible today.
-  hosts: local
-  connection: local
+- name: To add a user Amar if not already existing
+  hosts: devops
   become: yes
   tasks:
-  - name: To work with variables
-    vars:
-     names: Amar Sai
-    ansible.builtin.debug:
-     msg: "Hi {{names}}, you will be back on track very soon"
+  - name: To check for yser Amar
+    ansible.builtin.command: id expense
+    register: user_info
