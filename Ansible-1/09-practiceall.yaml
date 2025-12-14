@@ -1,11 +1,11 @@
 - name: To practice ansible today.
   hosts: devops
   become: yes
-  vars_prompt:
-  - name: User
-    prompt: "Hi please enter your name"
-    private: false
+  vars:
+   names: Yellanki Amar SAI
   tasks:
   - name: To work with variables
+    vars:
+     names: Amar Sai
     ansible.builtin.debug:
-     msg: "Hi {{User}}, you will be back on track very soon"
+     msg: "Hi {{names}}, you will be back on track very soon"
