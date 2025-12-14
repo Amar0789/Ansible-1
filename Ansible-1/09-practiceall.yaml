@@ -6,4 +6,4 @@
     vars:
      names:
     ansible.builtin.debug:
-     msg: "hello {{names | default ('Amar')}}" 
+     msg: "hello {{names | default ('Amar') }}" 
