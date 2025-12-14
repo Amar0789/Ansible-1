@@ -9,3 +9,6 @@
   - name: To print user user_info
     ansible.builtin.debug:
      msg: "{{user_info}}"
+  - name: To create a expense user
+    ansible.builtin.command: useradd expense
+    when: user.rc!=0
