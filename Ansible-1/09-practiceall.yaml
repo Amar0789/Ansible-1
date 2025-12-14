@@ -1,9 +1,9 @@
 - name: To practice ansible today.
   hosts: devops
   become: yes
-  vars:
-   name: Amar
+  vars_files:
+  - vars.yaml
   tasks:
   - name: To work with variables
     ansible.builtin.debug:
-     msg: "Hi {{name}}, you will be back on track very soon"
+     msg: "Hi {{names}}, you will be back on track very soon"
