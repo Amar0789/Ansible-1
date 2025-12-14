@@ -2,4 +2,4 @@
   hosts: hosts
   tasks: 
   - name: To ping a modules
-     ansible..builtin.ping:
+    ansible.builtin.ping:
