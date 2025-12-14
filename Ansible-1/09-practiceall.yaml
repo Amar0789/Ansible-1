@@ -1,14 +1,7 @@
-- name: To add a user Amar if not already existing
-  hosts: node
+- name: To print all th facts
   become: yes
+  hosts: devops
   tasks:
-  - name: To check for yser Amar
-    ansible.builtin.command: id expense
-    register: user_info
-    ignore_errors: true
-  - name: To print user user_info
+  - name: To print all the facts
     ansible.builtin.debug:
-     msg: "{{user_info}}"
-  - name: To create a expense user
-    ansible.builtin.command: useradd expense
-    when: user_info.rc!=0
+     msg: "{{ansible_facts}}"
