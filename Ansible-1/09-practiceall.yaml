@@ -1,7 +1,7 @@
 - name: To practice ansbile
   become: yes
   vars:
-  name: "Amar"
+   name: "Amar"
   hosts: devops
   tasks: 
   - name: To install nginx
