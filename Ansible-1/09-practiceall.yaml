@@ -4,6 +4,6 @@
   tasks: 
   - name: To check for default values
     vars:
-     names:
+     names: Amar Sai
     ansible.builtin.debug:
-     msg: "hello {{names | default('Amar') }}" 
+     msg: "hello {{names | upper}}" 
