@@ -1,7 +1,12 @@
-- name: To print all th facts
+- name: To print loops
   become: yes
   hosts: devops
   tasks:
-  - name: To print all the facts
+  - name: To print loops
     ansible.builtin.debug:
-     msg: "{{ansible_facts}}"
+     msg: "{{item}}"
+    loop:
+    - One
+    - Two 
+    - Three
+    - Four
