@@ -2,5 +2,6 @@
   hosts: devops
   tasks: 
   - name: To ping a modules
-    ansible.builtin.debug:
-     msg: "Hi"
+    ansible.builtin.package:
+    name: "nginx"
+    state: "installed"
