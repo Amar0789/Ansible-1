@@ -1,6 +1,6 @@
 - name: To practice ansible today.
   hosts: local
-  connection: localhost
+  connection: local
   become: yes
   tasks:
   - name: To work with variables
