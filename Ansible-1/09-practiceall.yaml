@@ -2,13 +2,9 @@
   hosts: devopss
   become: yes
   gather_facts: yes
+  vars:
+   hello: "My name is Amar Sai"
   tasks: 
   - name: To check for user
     ansible.builtin.debug: 
-     msg: "{{item}}"
-    loop:
-    - one
-    - two
-    - three
-    - four
-    - five
+     msg: "{{name | upper}}"
