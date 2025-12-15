@@ -3,12 +3,11 @@
   become: yes
   gather_facts: yes
   vars:
-   duration:
-   - one
-   - two
-   - three
-   - four
-   - five
+   tools:
+    ci: jenkins
+    cd: k8s
+    cloud: aws
+    scm: git
   tasks:
   - name: To display a message
     ansible.builtin.debug:
