@@ -4,7 +4,5 @@
   gather_facts: yes
   vars:
    hello: "My name is Amar Sai"
-  tasks: 
-  - name: To check for user
-    ansible.builtin.debug: 
-     msg: "{{hello | lower}}"
+  Role:
+  - tasks
