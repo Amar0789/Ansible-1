@@ -5,4 +5,4 @@
   vars:
    hello: "My name is Amar Sai"
   roles:
-  - tasks
+  - mysql
