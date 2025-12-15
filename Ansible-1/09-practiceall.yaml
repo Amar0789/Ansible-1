@@ -4,9 +4,11 @@
   gather_facts: yes
   tasks: 
   - name: To check for user
-    ansible.builtin.command: id expense
-    register: user
-    ignore_errors: true
-  - name: To add user
-    ansible.builtin.command: useradd expense
-    when: user.rc!=0
+    ansible.builtin.debug: 
+     msg: "{{item}}"
+    loop:
+    - one
+    - two
+    - three
+    - four
+    - five
