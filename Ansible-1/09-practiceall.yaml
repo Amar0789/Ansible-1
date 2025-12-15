@@ -1,9 +1,7 @@
-- name: ansible tasks
+- name: To practice Ansible
+  hosts: hosts
   become: yes
-  hosts: devops
-  tasks: 
-  - name: To check for default values
-    vars:
-     names: Amar Sai
-    ansible.builtin.debug:
-     msg: "hello {{names | upper}}" 
+  gather_facts: no
+  tasks:
+  - name: To pin gthe server
+    ansible.builtin.ping:
