@@ -1,5 +1,5 @@
 - name: To practice Ansible
-  hosts: hosts
+  hosts: devops
   become: yes
   gather_facts: no
   tasks:
