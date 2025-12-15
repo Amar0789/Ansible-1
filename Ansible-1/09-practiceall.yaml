@@ -2,9 +2,10 @@
   hosts: devopss
   become: yes
   gather_facts: yes
-  vars_files:  
-  - vars.yaml
+  vars_prompt:
+   name: person
+   prompt: Hi user! Please enter your name
   tasks:
   - name: To display a message
     ansible.builtin.debug:
-     msg: "{{person}} you need to improve focus on things which are really matter to you"
+     msg: "{{person}}! Welcome to the Ansible work session"
