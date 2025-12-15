@@ -2,11 +2,9 @@
   hosts: devopss
   become: yes
   gather_facts: yes
-  vars_prompt:
-   name: person
-   prompt: Hi user! Please enter your name
-   private: false
+  vars:
+   duration: 120
   tasks:
   - name: To display a message
     ansible.builtin.debug:
-     msg: "{{person}}! Welcome to the Ansible work session"
+     msg: "{{duration}} hours for your ansible session"
