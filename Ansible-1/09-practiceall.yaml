@@ -4,5 +4,5 @@
   gather_facts: yes
   vars:
    hello: "My name is Amar Sai"
-  Role:
+  Roles:
   - tasks
