@@ -7,4 +7,4 @@
   tasks: 
   - name: To check for user
     ansible.builtin.debug: 
-     msg: "{{hello | upper}}"
+     msg: "{{hello | lower}}"
