@@ -3,5 +3,6 @@
   become: yes
   gather_facts: no
   tasks:
-  - name: To pin gthe server
-    ansible.builtin.ping:
+  - name: To display a message
+    ansible.builtin.debug:
+     msg: "Hi i am Amar Sai"
