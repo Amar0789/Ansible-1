@@ -5,5 +5,5 @@
   tasks:
   - name: To display a message
     ansible.builtin.package:
-    name: nginx
-    state: present
+     name: nginx
+     state: present
