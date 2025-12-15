@@ -11,4 +11,4 @@
   tasks:
   - name: To display a message
     ansible.builtin.debug:
-     msg: "{{duration}} hours for your ansible session"
+     msg: "{{tools}} hours for your ansible session"
