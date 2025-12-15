@@ -10,5 +10,4 @@
   - name: To print user info
     ansible.builtin.debug: 
      msg: "{{user}}"
-  - name: To add user 
     when: user.rc!=0
