@@ -10,4 +10,5 @@
   - name: To print user info
     ansible.builtin.debug: 
      msg: "{{user}}"
+    ansible.builtin.debug: useradd expense
     when: user.rc!=0
