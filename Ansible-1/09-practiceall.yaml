@@ -3,7 +3,12 @@
   become: yes
   gather_facts: yes
   vars:
-   duration: 120
+   duration
+   - one
+   - two
+   - three
+   - four
+   - five
   tasks:
   - name: To display a message
     ansible.builtin.debug:
