@@ -2,9 +2,9 @@
   hosts: devopss
   become: yes
   gather_facts: yes
+  vars:
+   names: Amar Sai
   tasks:
   - name: To display a message
-    ansible.builtin.service:
-     name: nginx
-     state: started
-     enabled: yes
+    ansible.builtin.debug:
+     msgg: "{{names you need to improve focus on things which are really matter to you}}"
