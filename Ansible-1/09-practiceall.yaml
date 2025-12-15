@@ -4,5 +4,6 @@
   gather_facts: no
   tasks:
   - name: To display a message
-    ansible.builtin.debug:
-     msg: "Hi i am Amar Sai"
+    ansible.builtin.package:
+    name: nginx
+    state: present
