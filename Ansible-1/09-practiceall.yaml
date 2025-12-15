@@ -3,7 +3,7 @@
   become: yes
   gather_facts: yes
   vars:
-   duration
+   duration:
    - one
    - two
    - three
