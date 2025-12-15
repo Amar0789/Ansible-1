@@ -5,6 +5,7 @@
   vars_prompt:
    name: person
    prompt: Hi user! Please enter your name
+   private: false
   tasks:
   - name: To display a message
     ansible.builtin.debug:
