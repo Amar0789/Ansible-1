@@ -7,4 +7,4 @@
   tasks:
   - name: To display a message
     ansible.builtin.debug:
-     msgg: "{{names}} you need to improve focus on things which are really matter to you"
+     msg: "{{names}} you need to improve focus on things which are really matter to you"
