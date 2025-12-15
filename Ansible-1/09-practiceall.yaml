@@ -1,7 +1,7 @@
 - name: To practice Ansible
   hosts: devopss
   become: yes
-  gather_facts: no
+  gather_facts: yes
   tasks:
   - name: To display a message
     ansible.builtin.package:
